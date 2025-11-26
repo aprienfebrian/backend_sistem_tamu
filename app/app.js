@@ -8,7 +8,7 @@ app.use(express.json());
 // register route
 app.use(
   cors({
-    origin: "*",
+    origin: ["http://localhost:5173", "https://sistem-tamu.vercel.app"],
     credentials: true,
   })
 );
