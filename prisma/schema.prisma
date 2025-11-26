@@ -23,9 +23,10 @@ enum Status {
 model User {
   id        Int     @id @default(autoincrement())
   nama      String
-  identitas     String  @unique
+  email     String  @unique
   telepon String 
   role Role 
+  password String
   status Boolean @default(true)
   createdAt DateTime @default(now())
 
