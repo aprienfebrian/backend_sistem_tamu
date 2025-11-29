@@ -39,6 +39,7 @@ model Entri {
   tanggal DateTime @default(now())
   nama String
   identitas String
+  telepon Int @default(0)
   jumlah_tamu Int @default(0)
   institusi String
   keperluan String
